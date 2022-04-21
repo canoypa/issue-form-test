@@ -10,28 +10,28 @@ body:
       value: これは Markdown。作成された Issue には書き出されないぞ。
   - type: textarea
     attributes:
-      label: ラベル
+      label: "Textarea"
       description: 説明
       placeholder: 空っぽ
       value: 事前に値を入れておいたよ
   - type: textarea
     attributes:
-      label: コード入力にもできる
+      label: "コード入力にもできる"
       render: typescript
   - type: input
     attributes:
-      label: ラベル
+      label: "Input"
       description: 説明
       placeholder: 空っぽ
       value: 値
   - type: input
     attributes:
-      label: これは必須
+      label: "入力必須にできる"
       validations:
         required: true
   - type: dropdown
     attributes:
-      label: ラベル
+      label: "Dropdown"
       description: 説明
       options:
         - 1
@@ -39,7 +39,7 @@ body:
         - 3
   - type: dropdown
     attributes:
-      label: 複数選択にできる
+      label: "複数選択にできる"
       description: 説明
       multiple: true
       options:
@@ -48,7 +48,7 @@ body:
         - 3
   - type: checkboxes
     attributes:
-      label: ラベル
+      label: "Checkbox"
       description: 説明
       options:
         - label: "**test**"
@@ -56,7 +56,7 @@ body:
         - label: "[test](https://www.google.com/)"
   - type: checkboxes
     attributes:
-      label: 必須にできる
+      label: "チェック必須にできる"
       description: 説明
       options:
         - label: required
