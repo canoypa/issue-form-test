@@ -1,0 +1,63 @@
+name: Test
+description: Test Issue Form
+title: "[Test]: "
+labels: ["test"]
+assignees:
+  - canoypa
+body:
+  - type: markdown
+    attributes: 
+      value: これは Markdown。作成された Issue には書き出されないぞ。
+  - type: textarea
+    attributes:
+      label: ラベル
+      description: 説明
+      placeholder: 空っぽ
+      value: 事前に値を入れておいたよ
+  - type: textarea
+    attributes:
+      label: コード入力にもできる
+      render: typescript
+  - type: input
+    attributes:
+      label: ラベル
+      description: 説明
+      placeholder: 空っぽ
+      value: 値
+  - type: input
+    attributes:
+      label: これは必須
+      validations:
+        required: true
+  - type: dropdown
+    attributes:
+      label: ラベル
+      description: 説明
+      options:
+        - 1
+        - 2
+        - 3
+  - type: dropdown
+    attributes:
+      label: 複数選択にできる
+      description: 説明
+      multiple: true
+      options:
+        - 1
+        - 2
+        - 3
+  - type: checkboxes
+    attributes:
+      label: ラベル
+      description: 説明
+      options:
+        - label: **test**
+        - label: # test
+        - label: [test](https://www.google.com/)
+  - type: checkboxes
+    attributes:
+      label: 必須にできる
+      description: 説明
+      options:
+        - label: required
+          required: true
