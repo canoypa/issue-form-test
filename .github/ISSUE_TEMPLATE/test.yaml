@@ -25,6 +25,7 @@ body:
       placeholder: 空っぽ
       value: 値
   - type: input
+    id: input2
     attributes:
       label: "入力必須にできる"
     validations:
@@ -38,6 +39,7 @@ body:
         - 2
         - 3
   - type: dropdown
+    id: dropdown2
     attributes:
       label: "複数選択にできる"
       description: 説明
@@ -51,13 +53,14 @@ body:
       label: "Checkbox"
       description: 説明
       options:
-        - label: "**test**"
-        - label: "# test"
-        - label: "[test](https://www.google.com/)"
+        - label: "**チェックボックス 1**"
+        - label: "# チェックボックス 2"
+        - label: "[チェックボックス 3](https://www.google.com/)"
   - type: checkboxes
+    id: checkbox2
     attributes:
       label: "チェック必須にできる"
       description: 説明
       options:
-        - label: required
+        - label: チェック必須
           required: true
