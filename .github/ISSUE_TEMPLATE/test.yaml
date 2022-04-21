@@ -52,8 +52,8 @@ body:
       description: 説明
       options:
         - label: **test**
-        - label: # test
-        - label: [test](https://www.google.com/)
+        - label: "# test"
+        - label: "[test](https://www.google.com/)"
   - type: checkboxes
     attributes:
       label: 必須にできる
