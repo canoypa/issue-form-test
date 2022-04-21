@@ -27,8 +27,8 @@ body:
   - type: input
     attributes:
       label: "入力必須にできる"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
     attributes:
       label: "Dropdown"
