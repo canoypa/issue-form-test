@@ -15,6 +15,7 @@ body:
       placeholder: 空っぽ
       value: 事前に値を入れておいたよ
   - type: textarea
+    id: textarea2
     attributes:
       label: "コード入力にもできる"
       render: typescript
