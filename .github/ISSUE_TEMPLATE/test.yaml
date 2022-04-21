@@ -18,7 +18,7 @@ body:
     id: textarea2
     attributes:
       label: "コード入力にもできる"
-      render: ts
+      render: TypeScript
   - type: input
     attributes:
       label: "Input"
