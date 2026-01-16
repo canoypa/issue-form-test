@@ -1,40 +1,33 @@
-name: Test
-description: Test Issue Form
-title: "[Test]: "
+name: Issueフォームテスト
+description: Issueフォームのテストです
+title: "[Issueフォームテスト]: "
 labels: ["test"]
 assignees:
   - canoypa
 body:
   - type: markdown
     attributes: 
-      value: これは Markdown。作成された Issue には書き出されないぞ。
+      value: これはIssueフォームのサンプルです。以下のフォーム項目を埋めるだけで、Issueを作成することができる。💃
   - type: textarea
     attributes:
-      label: "Textarea"
-      description: 説明
-      placeholder: 空っぽ
-      value: 事前に値を入れておいたよ
+      label: "テキスト入力欄1"
+      description: 例えばこのように、概要を入力するためのテキストエリアを用意できる。
+      placeholder: プレースホルダ
   - type: textarea
-    id: textarea2
     attributes:
-      label: "コード入力にもできる"
-      render: TypeScript
+      label: "テキスト入力欄2"
+      description: 例えばこのように、概要を入力するためのテキストエリアを用意できる。
+      placeholder: プレースホルダ
+      value: 初期値を入れることも可能
   - type: input
     attributes:
-      label: "Input"
-      description: 説明
-      placeholder: 空っぽ
-      value: 値
-  - type: input
-    id: input2
-    attributes:
-      label: "入力必須にできる"
-    validations:
-      required: true
+      label: "テキスト入力欄3"
+      description: 一行入力欄も用意可能
+      placeholder: プレースホルダ
   - type: dropdown
     attributes:
-      label: "Dropdown"
-      description: 説明
+      label: "選択1"
+      description: 選択肢から選ぶようにもできる
       options:
         - 1
         - 2
@@ -42,26 +35,18 @@ body:
   - type: dropdown
     id: dropdown2
     attributes:
-      label: "複数選択にできる"
-      description: 説明
+      label: "選択2"
+      description: 複数選択できる項目も用意可能
       multiple: true
       options:
-        - 1
-        - 2
-        - 3
+        - 4
+        - 5
+        - 6
   - type: checkboxes
     attributes:
-      label: "Checkbox"
-      description: 説明
+      label: "チェックボックス"
+      description: チェックしてね
       options:
-        - label: "**チェックボックス 1**"
-        - label: "# チェックボックス 2"
-        - label: "[チェックボックス 3](https://www.google.com/)"
-  - type: checkboxes
-    id: checkbox2
-    attributes:
-      label: "チェック必須にできる"
-      description: 説明
-      options:
-        - label: チェック必須
-          required: true
+        - label: "1"
+        - label: "2"
+        - label: "3"
